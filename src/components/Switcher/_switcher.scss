@@ -1,0 +1,26 @@
+.switcher {
+    width: 42px;
+    height: 24px;
+    background-color: blue;
+    border-radius: 100px;
+    position: relative;
+    cursor: pointer;
+    transition: 0.3s ease;
+
+    &.active {
+        .switcher__btn {
+            left: 20px;
+        }
+    }
+    // .switcher__btn
+    &__btn {
+        width: 19px;
+        height: 19px;
+        border-radius: 100%;
+        background-color: white;
+        position: absolute;
+        left: 2.3px;
+        top: 2.3px;
+        bottom: 2.3px;
+    }
+}

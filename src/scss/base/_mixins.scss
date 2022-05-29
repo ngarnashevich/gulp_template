@@ -1,0 +1,87 @@
+//Percent
+@function percent($px, $from) {
+    $result: math.div($px, $from) * 100%;
+    @return $result;
+}
+//REM
+@function rem($px) {
+    $result: math.div($px, 16) + rem;
+    @return $result;
+}
+//EM
+@function em($px, $current: 16) {
+    $result: math.div($px, $current) + em;
+    @return $result;
+}
+
+@mixin min-max($min-width, $max-width, $padding) {
+    box-sizing: border-box;
+    min-width: $min-width;
+    max-width: $max-width;
+    margin: 0 auto;
+    padding: 0 $padding;
+}
+
+@mixin max($width) {
+    @media (max-width: $width+ "px") {
+        @content;
+    }
+}
+
+@mixin min($width) {
+    @media (min-width: $width+ "px") {
+        @content;
+    }
+}
+
+@mixin xxxl {
+    @media (min-width: 1921px) and (max-width: 5120px) {
+        @content;
+    }
+}
+
+@mixin xxl {
+    @media (min-width: 1400px) and (max-width: 1680px) {
+        @content;
+    }
+}
+
+@mixin xl {
+    @media (min-width: 1200px) and (max-width: 1399px) {
+        @content;
+    }
+}
+
+@mixin lg {
+    @media (min-width: 992px) and (max-width: 1199px) {
+        @content;
+    }
+}
+
+@mixin md {
+    @media (min-width: 768px) and (max-width: 991px) {
+        @content;
+    }
+}
+
+@mixin sm {
+    @media (min-width: 576px) and (max-width: 767px) {
+        @content;
+    }
+}
+
+@mixin xs {
+    @media (min-width: 320px) and (max-width: 575px) {
+        @content;
+    }
+}
+
+@mixin noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Opera and Firefox */
+}
