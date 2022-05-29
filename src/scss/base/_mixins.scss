@@ -33,45 +33,45 @@
         @content;
     }
 }
-
+// EXTRA 4k
 @mixin xxxl {
-    @media (min-width: 1921px) and (max-width: 5120px) {
+    @media (min-width: 1921.98px) and (max-width: 5120.98px) {
         @content;
     }
 }
-
+//HD+
 @mixin xxl {
-    @media (min-width: 1400px) and (max-width: 1680px) {
+    @media (min-width: 1400.98px) and (max-width: 1680.98px) {
         @content;
     }
 }
-
+//HD
 @mixin xl {
-    @media (min-width: 1200px) and (max-width: 1399px) {
+    @media (min-width: 1200.98px) and (max-width: 1399.98px) {
         @content;
     }
 }
 
 @mixin lg {
-    @media (min-width: 992px) and (max-width: 1199px) {
+    @media (min-width: 992px) and (max-width: 1199.98px) {
         @content;
     }
 }
 
 @mixin md {
-    @media (min-width: 768px) and (max-width: 991px) {
+    @media (min-width: 768px) and (max-width: 991.98px) {
         @content;
     }
 }
 
 @mixin sm {
-    @media (min-width: 576px) and (max-width: 767px) {
+    @media (min-width: 576px) and (max-width: 767.98px) {
         @content;
     }
 }
 
 @mixin xs {
-    @media (min-width: 320px) and (max-width: 575px) {
+    @media (min-width: 320px) and (max-width: 575.98px) {
         @content;
     }
 }
@@ -82,6 +82,5 @@
     -khtml-user-select: none; /* Konqueror HTML */
     -moz-user-select: none; /* Old versions of Firefox */
     -ms-user-select: none; /* Internet Explorer/Edge */
-    user-select: none; /* Non-prefixed version, currently
-                                  supported by Chrome, Opera and Firefox */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome, Opera and Firefox */
 }
