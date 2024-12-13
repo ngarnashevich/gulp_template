@@ -1,14 +1,13 @@
 @use "sass:math";
 
-$fontSize: 16px; // где 16(px) - размер шрифта по умолчанию из макета
-
-// Burger Menu
-$burgerActiveColor: #000;
-$burgerColor: #000;
-
-// Colors
-$mainColor: #000; // Цвет шрифта по умолчанию
-
-// Fonts
-$fontMain: sans-serif;
-$fontSecondary: sans-serif;
+:root {
+    --fontSize: 16px; // где 16(px) - размер шрифта по умолчанию из макета
+    // Burger Menu
+    --burgerActiveColor: #000;
+    --burgerColor: #000;
+    // Colors
+    --mainColor: #000; // Цвет шрифта по умолчанию
+    // Fonts
+    --fontMain: sans-serif;
+    --fontSecondary: sans-serif;
+}

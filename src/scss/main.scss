@@ -1,13 +1,13 @@
 @use "sass:math";
 
-@import "vars";
-@import "base/grid"; //bootstrap 4 grid
-@import "base/mixins";
-@import "base/reset";
-@import "extends";
+@use "vars";
+@use "base/grid"; //bootstrap 4 grid
+@use "base/mixins";
+@use "base/reset";
+@use "extends";
 
 // Подключение стилей отдельных блоков
-@import "blocks/header";
-@import "blocks/footer";
+@use "blocks/header";
+@use "blocks/footer";
 
 // @import "../components/FocusInputAnimation/inputAnimation";
